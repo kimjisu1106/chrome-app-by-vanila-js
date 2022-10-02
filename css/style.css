@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "more.css";
 @import "variable.css";
+@import "keyframes.css";
 
 /* screen */
 @import "screen/index.css";

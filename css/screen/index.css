@@ -1,20 +1,25 @@
-#login-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.appear {
+  animation: fadein 2s forwards;
 }
 
-#login-form input {
-  width: 50vw;
-  border: none;
-  font-size: 1em;
-  padding: 10px;
-}
-
-#greeting {
-  font-size: 2em;
+.disappear {
+  animation: fadeout 2s forwards;
 }
 
 .hidden {
   display: none;
+}
+
+.login-form input {
+  width: 50vw;
+  border: none;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 2em;
+  margin-top: 10px;
 }
