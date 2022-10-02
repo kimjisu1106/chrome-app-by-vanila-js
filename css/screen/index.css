@@ -1,0 +1,20 @@
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form input {
+  width: 50vw;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+}
+
+#greeting {
+  font-size: 2em;
+}
+
+.hidden {
+  display: none;
+}
