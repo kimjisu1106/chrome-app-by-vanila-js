@@ -8,21 +8,37 @@
     <title>Momentum</title>
   </head>
   <body>
-    <main class="main-screen">
-      <div id="status-bar" class="status-bar">
-        <span id="logout-btn" class="hidden">log out</span>
+    <header class="header"></header>
+    <main class="main">
+      <div id="clock" class="clock">
+        <span></span>
+        <span>:</span>
+        <span></span>
       </div>
+      <h1 id="greeting" class="greeting">반가워요</h1>
       <form id="login-form" class="login-form hidden">
         <input
           maxlength="15"
           type="text"
+          maxlength="15"
           placeholder="당신의 이름은 무엇인가요?"
           required
         />
       </form>
-      <h1 id="greeting" class="greeting hidden"></h1>
+      <form id="main-focus" class="main-focus hidden">
+        <h3>오늘의 집중 포인트는 무엇인가요?</h3>
+        <input />
+      </form>
     </main>
+    <footer class="footer">
+      <div id="quote" class="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
   </body>
   <script src="js/login.js"></script>
-  <script src="js/logout.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/background.js"></script>
 </html>

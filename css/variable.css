@@ -1,3 +1,6 @@
 :root {
   --horizontal-margin: 25px;
+  --border-gray: rgb(226, 226, 226);
+  --text-gray: rgb(158, 158, 158);
+  --black: rgb(50, 50, 50) k;
 }

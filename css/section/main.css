@@ -1,0 +1,52 @@
+.main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 8em;
+  color: var(--black);
+}
+
+.clock span:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.greeting {
+  font-size: 3em;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 80%;
+  text-align: center;
+}
+
+.login-form input {
+  width: 50%;
+  padding: 10px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid var(--border-gray);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.login-form input::placeholder {
+  color: var(--text-gray);
+}
+
+.main-focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
