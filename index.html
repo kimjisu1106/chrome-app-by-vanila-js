@@ -8,13 +8,33 @@
     <title>Momentum</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <form id="bg-type">
+        <input
+          id="bgSolidColor"
+          name="bg-type"
+          type="radio"
+          value="Solid Color"
+          checked
+        />
+        <label for="bgSolidColor">Solid Color</label>
+        <input
+          id="bgLandscapeImg"
+          name="bg-type"
+          type="radio"
+          value="Landscape Image"
+        />
+        <label for="bgLandscapeImg">Landscape Image</label>
+        <button type="submit">설정</button>
+      </form>
+    </header>
     <main class="main">
       <div id="clock" class="clock">
         <span></span>
         <span>:</span>
         <span></span>
       </div>
+
       <h1 id="greeting" class="greeting">반가워요</h1>
       <form id="login-form" class="login-form hidden">
         <input
@@ -36,6 +56,7 @@
         <span></span>
       </div>
     </footer>
+    <img id="background-image" class="background-image" />
   </body>
   <script src="js/login.js"></script>
   <script src="js/clock.js"></script>
