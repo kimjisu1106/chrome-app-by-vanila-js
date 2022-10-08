@@ -1,0 +1,15 @@
+.setting {
+  height: 100vh;
+  margin: 10px;
+  position: absolute;
+  right: -3000px;
+  animation: incoming 1s forwards;
+}
+
+@keyframes incoming {
+  from {
+  }
+  to {
+    right: 0px;
+  }
+}

@@ -13,7 +13,8 @@
   position: relative;
   margin-bottom: 20px;
   font-size: 8em;
-  color: var(--black);
+  color: white;
+  text-shadow: 1px 1px 5px gray;
 }
 
 .clock span:nth-child(2) {

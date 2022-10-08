@@ -87,19 +87,21 @@ const bgTypeForm = document.querySelector("#bg-type");
 const bgTypeSolidColor = document.querySelector("#bgSolidColor");
 const bgTypeLandscapeImg = document.querySelector("#bgLandscapeImg");
 const bgImg = document.querySelector("img#background-image");
+const SAVEDBGTYPE_KEY = "savedBgType";
 
 function bgSolidColor() {
     const randomColor = solidColor[Math.floor(Math.random() * solidColor.length)];
     document.body.style = `background: ${randomColor}`;
     bgImg.classList.add(HIDDEN_CLASSNAME);
+    localStorage.setItem(SAVEDBGTYPE_KEY,"SolidColor")
 }
 
 function bgLandscapeImg() {
     const randomImg = landscapeImg[Math.floor(Math.random() * landscapeImg.length)];
     bgImg.src=`img/${randomImg}`;
-    console.log(bgImg);
     bgImg.classList.remove(HIDDEN_CLASSNAME);
     document.body.style = "white";
+    localStorage.setItem(SAVEDBGTYPE_KEY,"Landscape")
 }
 
 function bgType(event) {
@@ -112,3 +114,15 @@ function bgType(event) {
 }
 
 bgTypeForm.addEventListener("submit",bgType);
+
+const savedBgType = localStorage.getItem(SAVEDBGTYPE_KEY);
+if (savedBgType===null) {
+    bgSolidColor()}
+    else if (savedBgType==="SolidColor") {
+        bgSolidColor();       
+        bgTypeSolidColor.setAttribute("checked",true);
+    } else if (savedBgType==="Landscape") {
+        bgLandscapeImg();
+        bgTypeLandscapeImg.setAttribute("checked",true);
+
+}
