@@ -9,7 +9,17 @@
   </head>
   <body>
     <header class="header">
-      <div></div>
+      <div>
+        <div id="weather" class="weather">
+          <div>
+            <img id="weather-img" class="weather-img" />
+          </div>
+          <div>
+            <span id="weather-temp" class="weather-temp"></span>
+            <span id="weather-locate" class="weather-locate"></span>
+          </div>
+        </div>
+      </div>
       <div></div>
       <div></div>
     </header>
@@ -41,7 +51,7 @@
             required
           />
         </form>
-        <ul id="todo-list"></ul>
+        <ul id="todo-list" class="todo-list"></ul>
       </section>
     </main>
     <footer class="footer">
@@ -97,5 +107,6 @@
   <script src="js/quote.js"></script>
   <script src="js/background.js"></script>
   <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
   <script src="js/setting-section.js"></script>
 </html>

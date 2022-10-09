@@ -82,7 +82,7 @@ const solidColor = ["#6fffc4",
     "#ffebf0",
     "#ffefd5",
     "#fff0f5"];
-const landscapeImg = ["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg"];
+const landscapeImg = ["bg-img/001.jpg","bg-img/002.jpg","bg-img/003.jpg","bg-img/004.jpg","bg-img/005.jpg","bg-img/006.jpg","bg-img/007.jpg","bg-img/008.jpg","bg-img/009.jpg","bg-img/010.jpg"];
 const bgTypeForm = document.querySelector("#bg-type");
 const bgTypeSolidColor = document.querySelector("#bgSolidColor");
 const bgTypeLandscapeImg = document.querySelector("#bgLandscapeImg");

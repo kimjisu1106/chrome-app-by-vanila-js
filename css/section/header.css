@@ -5,20 +5,45 @@
   justify-content: center;
 }
 
-.header div:first-child {
+.header > div:first-child {
   width: 33%;
   display: flex;
   justify-content: flex-start;
 }
 
-.header div:nth-child(2) {
+.header > div:nth-child(2) {
   width: 33%;
   display: flex;
   justify-content: center;
 }
 
-.header div:last-child {
+.header > div:last-child {
   width: 33%;
   display: flex;
   justify-content: flex-end;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 0px 5px;
+  text-shadow: 1px 1px 5px var(--text-gray);
+}
+
+.weather div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.weather-img {
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+}
+
+.weather-temp {
+  font-size: 1em;
+  margin-bottom: 4px;
 }
