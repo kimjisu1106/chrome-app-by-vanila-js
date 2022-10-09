@@ -14,11 +14,13 @@
       <div></div>
     </header>
     <main class="main">
-      <div id="clock" class="clock">
+      <!-- clock -->
+      <section id="clock" class="clock">
         <span></span>
         <span>:</span>
         <span></span>
-      </div>
+      </section>
+      <!-- greeting -->
       <h1 id="greeting" class="greeting">반가워요</h1>
       <form id="login-form" class="login-form hidden">
         <input
@@ -29,10 +31,18 @@
           required
         />
       </form>
-      <form id="main-focus" class="main-focus hidden">
-        <h3>오늘의 집중 포인트는 무엇인가요?</h3>
-        <input />
-      </form>
+      <!-- todo -->
+      <section id="main-focus" class="main-focus hidden">
+        <span>오늘의 집중 포인트는 무엇인가요?</span>
+        <form id="todo-form" class="todo-form">
+          <input
+            type="text"
+            placeholder="여기에 작성하고 엔터를 누르세요"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
     </main>
     <footer class="footer">
       <div id="quote" class="quote">
@@ -40,6 +50,7 @@
         <span></span>
       </div>
     </footer>
+    <!-- setting -->
     <div id="setting" class="setting">
       <div id="setting-btn" class="setting-btn">
         <i class="fas fa-chevron-left"></i>
@@ -74,6 +85,7 @@
         </form>
       </section>
     </div>
+    <!-- random background -->
     <img id="background-image" class="background-image" />
   </body>
   <script
@@ -84,5 +96,6 @@
   <script src="js/clock.js"></script>
   <script src="js/quote.js"></script>
   <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
   <script src="js/setting-section.js"></script>
 </html>

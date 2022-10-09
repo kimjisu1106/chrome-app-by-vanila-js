@@ -49,5 +49,25 @@
 .main-focus {
   display: flex;
   flex-direction: column;
+}
+
+.main-focus > span {
+  font-size: 1.4em;
+  color: white;
+  text-shadow: 0.5px 0.5px 5px black;
+  margin-bottom: 5px;
+}
+.todo-form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.todo-form input {
+  width: 100%;
+  margin-top: 5px;
+  border: none;
+  background-color: inherit;
+  text-align: center;
+  font-size: 1.4em;
 }
