@@ -15,3 +15,11 @@
     opacity: 0%;
   }
 }
+
+@keyframes right-incoming {
+  from {
+  }
+  to {
+    right: 0px;
+  }
+}

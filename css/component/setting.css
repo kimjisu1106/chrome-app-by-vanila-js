@@ -1,15 +1,91 @@
 .setting {
+  width: 20%;
   height: 100vh;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  right: -3000px;
-  animation: incoming 1s forwards;
+  right: -20%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-@keyframes incoming {
+.setting-title {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.setting-title > span {
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+}
+
+.setting section {
+  width: 90%;
+  padding-left: 10%;
+}
+
+.setting-btn {
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+}
+
+.setting-btn > i {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: -34px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 50%;
+}
+
+.setting__section-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.incoming-setting {
+  animation: right-incoming 1s forwards;
+}
+
+.outgoing-setting {
+  animation: right-outgoing 1s forwards;
+}
+
+@keyframes right-incoming {
   from {
+    right: -20%;
   }
   to {
     right: 0px;
   }
+}
+
+@keyframes right-outgoing {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -20%;
+  }
+}
+
+.setting-bg {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-type {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+.bg-type button {
+  border: none;
 }
