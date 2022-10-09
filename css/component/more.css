@@ -1,11 +1,3 @@
-.appear {
-  animation: fadein 2s forwards;
-}
-
-.disappear {
-  animation: fadeout 2s forwards;
-}
-
 .hidden {
   display: none;
 }
